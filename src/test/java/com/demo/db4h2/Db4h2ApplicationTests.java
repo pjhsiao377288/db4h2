@@ -7,15 +7,11 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 
-@AutoConfigureMockMvc
 @SpringBootTest
 class Db4h2ApplicationTests {
 
     @Autowired
     private StockRepository repository;
-
-    @Autowired
-    private MockMvc mockMvc;
 
     @Test
     void contextLoads() {
